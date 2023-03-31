@@ -10,8 +10,8 @@ function App() {
   const [healthLabel, sethealthLabel] = useState("vegan")
   const [dietLabels, setdietLabels] = useState("balanced")
 
-  const YOUR_APP_ID = "6a5478d2";
-  const YOUR_APP_KEY = "262b12fbd665dca7efe3fc9785d50516";
+  const YOUR_APP_ID = "###";
+  const YOUR_APP_KEY = "###";
   var url = `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&health=${healthLabel}&dietLabels=${dietLabels}&calories=${calories}&from=0&to=30`
   // curl "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free"
   async function getRecipes() {
